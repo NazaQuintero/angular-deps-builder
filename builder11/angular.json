@@ -1,0 +1,799 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "angular-common": {
+      "projectType": "application",
+      "root": "projects/angular-common",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/angular-common",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/angular-common/extra-webpack.config.js",
+              "libraryName": "angular-common",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    },
+    "angular-core": {
+      "projectType": "application",
+      "root": "projects/angular-core",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/angular-core",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/angular-core/extra-webpack.config.js",
+              "libraryName": "angular-core",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    },
+    "angular-platform-browser": {
+      "projectType": "application",
+      "root": "projects/angular-platform-browser",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/angular-platform-browser",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/angular-platform-browser/extra-webpack.config.js",
+              "libraryName": "angular-platform-browser",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    },
+    "angular-animations": {
+      "projectType": "application",
+      "root": "projects/angular-animations",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/angular-animations",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/angular-animations/extra-webpack.config.js",
+              "libraryName": "angular-animations",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    },
+    "angular-animations-browser": {
+      "projectType": "application",
+      "root": "projects/angular-animations-browser",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/angular-animations-browser",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/angular-animations-browser/extra-webpack.config.js",
+              "libraryName": "angular-animations-browser",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    },
+    "angular-browser-animations": {
+      "projectType": "application",
+      "root": "projects/angular-browser-animations",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/angular-browser-animations",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/angular-browser-animations/extra-webpack.config.js",
+              "libraryName": "angular-browser-animations",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    },
+    "angular-common-http": {
+      "projectType": "application",
+      "root": "projects/angular-common-http",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/angular-common-http",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/angular-common-http/extra-webpack.config.js",
+              "libraryName": "angular-common-http",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    },
+    "angular-router": {
+      "projectType": "application",
+      "root": "projects/angular-router",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/angular-router",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/angular-router/extra-webpack.config.js",
+              "libraryName": "angular-router",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    },
+    "angular-forms": {
+      "projectType": "application",
+      "root": "projects/angular-forms",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/angular-forms",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/angular-forms/extra-webpack.config.js",
+              "libraryName": "angular-forms",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    },
+    "angular-cdk": {
+      "projectType": "application",
+      "root": "projects/angular-cdk",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/angular-cdk",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/angular-cdk/extra-webpack.config.js",
+              "libraryName": "angular-cdk",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    },
+    "angular-cdk-collections": {
+      "projectType": "application",
+      "root": "projects/angular-cdk-collections",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/angular-cdk-collections",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/angular-cdk-collections/extra-webpack.config.js",
+              "libraryName": "angular-cdk-collections",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    },
+    "angular-cdk-bidi": {
+      "projectType": "application",
+      "root": "projects/angular-cdk-bidi",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/angular-cdk-bidi",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/angular-cdk-bidi/extra-webpack.config.js",
+              "libraryName": "angular-cdk-bidi",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    },
+    "angular-cdk-platform": {
+      "projectType": "application",
+      "root": "projects/angular-cdk-platform",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/angular-cdk-platform",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/angular-cdk-platform/extra-webpack.config.js",
+              "libraryName": "angular-cdk-platform",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    },
+    "angular-cdk-observers": {
+      "projectType": "application",
+      "root": "projects/angular-cdk-observers",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/angular-cdk-observers",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/angular-cdk-observers/extra-webpack.config.js",
+              "libraryName": "angular-cdk-observers",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    },
+    "angular-cdk-scrolling": {
+      "projectType": "application",
+      "root": "projects/angular-cdk-scrolling",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/angular-cdk-scrolling",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/angular-cdk-scrolling/extra-webpack.config.js",
+              "libraryName": "angular-cdk-scrolling",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    },
+    "angular-cdk-a11y": {
+      "projectType": "application",
+      "root": "projects/angular-cdk-a11y",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/angular-cdk-a11y",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/angular-cdk-a11y/extra-webpack.config.js",
+              "libraryName": "angular-cdk-a11y",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    },
+    "angular-cdk-overlay": {
+      "projectType": "application",
+      "root": "projects/angular-cdk-overlay",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/angular-cdk-overlay",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/angular-cdk-overlay/extra-webpack.config.js",
+              "libraryName": "angular-cdk-overlay",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    },
+    "angular-cdk-layout": {
+      "projectType": "application",
+      "root": "projects/angular-cdk-layout",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/angular-cdk-layout",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/angular-cdk-layout/extra-webpack.config.js",
+              "libraryName": "angular-cdk-layout",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    },
+    "angular-cdk-accordion": {
+      "projectType": "application",
+      "root": "projects/angular-cdk-accordion",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/angular-cdk-accordion",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/angular-cdk-accordion/extra-webpack.config.js",
+              "libraryName": "angular-cdk-accordion",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    },
+    "angular-cdk-drag-drop": {
+      "projectType": "application",
+      "root": "projects/angular-cdk-drag-drop",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/angular-cdk-drag-drop",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/angular-cdk-drag-drop/extra-webpack.config.js",
+              "libraryName": "angular-cdk-drag-drop",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    },
+    "angular-cdk-keycodes": {
+      "projectType": "application",
+      "root": "projects/angular-cdk-keycodes",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/angular-cdk-keycodes",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/angular-cdk-keycodes/extra-webpack.config.js",
+              "libraryName": "angular-cdk-keycodes",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    },
+    "angular-cdk-portal": {
+      "projectType": "application",
+      "root": "projects/angular-cdk-portal",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/angular-cdk-portal",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/angular-cdk-portal/extra-webpack.config.js",
+              "libraryName": "angular-cdk-portal",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    },
+    "angular-cdk-coercion": {
+      "projectType": "application",
+      "root": "projects/angular-cdk-coercion",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/angular-cdk-coercion",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/angular-cdk-coercion/extra-webpack.config.js",
+              "libraryName": "angular-cdk-coercion",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    },
+    "single-spa-angular": {
+      "projectType": "application",
+      "root": "projects/single-spa-angular",
+      "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "outputPath": "../proxy/public/angular11/single-spa-angular",
+            "index": "projects/index.html",
+            "main": "projects/main.ts",
+            "tsConfig": "projects/tsconfig.app.json",
+            "aot": true,
+            "customWebpackConfig": {
+              "path": "projects/single-spa-angular/extra-webpack.config.js",
+              "libraryName": "single-spa-angular",
+              "libraryTarget": "system"
+            }
+          },
+          "configurations": {
+            "production": {
+              "index": "",
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
