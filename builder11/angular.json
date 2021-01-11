@@ -10,7 +10,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "../proxy/public/angular11/angular-common",
+            "outputPath": "../dist/angular-common",
             "index": "projects/index.html",
             "main": "projects/main.ts",
             "tsConfig": "projects/tsconfig.app.json",
@@ -43,7 +43,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "../proxy/public/angular11/angular-core",
+            "outputPath": "../dist/angular-core",
             "index": "projects/index.html",
             "main": "projects/main.ts",
             "tsConfig": "projects/tsconfig.app.json",
@@ -76,7 +76,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "../proxy/public/angular11/angular-platform-browser",
+            "outputPath": "../dist/angular-platform-browser",
             "index": "projects/index.html",
             "main": "projects/main.ts",
             "tsConfig": "projects/tsconfig.app.json",
@@ -109,7 +109,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "../proxy/public/angular11/angular-animations",
+            "outputPath": "../dist/angular-animations",
             "index": "projects/index.html",
             "main": "projects/main.ts",
             "tsConfig": "projects/tsconfig.app.json",
@@ -142,7 +142,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "../proxy/public/angular11/angular-animations-browser",
+            "outputPath": "../dist/angular-animations-browser",
             "index": "projects/index.html",
             "main": "projects/main.ts",
             "tsConfig": "projects/tsconfig.app.json",
@@ -175,7 +175,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "../proxy/public/angular11/angular-browser-animations",
+            "outputPath": "../dist/angular-browser-animations",
             "index": "projects/index.html",
             "main": "projects/main.ts",
             "tsConfig": "projects/tsconfig.app.json",
@@ -208,7 +208,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "../proxy/public/angular11/angular-common-http",
+            "outputPath": "../dist/angular-common-http",
             "index": "projects/index.html",
             "main": "projects/main.ts",
             "tsConfig": "projects/tsconfig.app.json",
@@ -241,7 +241,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "../proxy/public/angular11/angular-router",
+            "outputPath": "../dist/angular-router",
             "index": "projects/index.html",
             "main": "projects/main.ts",
             "tsConfig": "projects/tsconfig.app.json",
@@ -274,7 +274,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "../proxy/public/angular11/angular-forms",
+            "outputPath": "../dist/angular-forms",
             "index": "projects/index.html",
             "main": "projects/main.ts",
             "tsConfig": "projects/tsconfig.app.json",
@@ -300,21 +300,21 @@
         }
       }
     },
-    "angular-cdk": {
+    "single-spa-angular": {
       "projectType": "application",
-      "root": "projects/angular-cdk",
+      "root": "projects/single-spa-angular",
       "architect": {
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "../proxy/public/angular11/angular-cdk",
+            "outputPath": "../dist/single-spa-angular",
             "index": "projects/index.html",
             "main": "projects/main.ts",
             "tsConfig": "projects/tsconfig.app.json",
             "aot": true,
             "customWebpackConfig": {
-              "path": "projects/angular-cdk/extra-webpack.config.js",
-              "libraryName": "angular-cdk",
+              "path": "projects/single-spa-angular/extra-webpack.config.js",
+              "libraryName": "single-spa-angular",
               "libraryTarget": "system"
             }
           },
@@ -340,7 +340,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "../proxy/public/angular11/angular-cdk-collections",
+            "outputPath": "../dist/angular-cdk-collections",
             "index": "projects/index.html",
             "main": "projects/main.ts",
             "tsConfig": "projects/tsconfig.app.json",
@@ -373,7 +373,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "../proxy/public/angular11/angular-cdk-bidi",
+            "outputPath": "../dist/angular-cdk-bidi",
             "index": "projects/index.html",
             "main": "projects/main.ts",
             "tsConfig": "projects/tsconfig.app.json",
@@ -406,7 +406,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "../proxy/public/angular11/angular-cdk-platform",
+            "outputPath": "../dist/angular-cdk-platform",
             "index": "projects/index.html",
             "main": "projects/main.ts",
             "tsConfig": "projects/tsconfig.app.json",
@@ -439,7 +439,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "../proxy/public/angular11/angular-cdk-observers",
+            "outputPath": "../dist/angular-cdk-observers",
             "index": "projects/index.html",
             "main": "projects/main.ts",
             "tsConfig": "projects/tsconfig.app.json",
@@ -472,7 +472,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "../proxy/public/angular11/angular-cdk-scrolling",
+            "outputPath": "../dist/angular-cdk-scrolling",
             "index": "projects/index.html",
             "main": "projects/main.ts",
             "tsConfig": "projects/tsconfig.app.json",
@@ -505,7 +505,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "../proxy/public/angular11/angular-cdk-a11y",
+            "outputPath": "../dist/angular-cdk-a11y",
             "index": "projects/index.html",
             "main": "projects/main.ts",
             "tsConfig": "projects/tsconfig.app.json",
@@ -538,7 +538,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "../proxy/public/angular11/angular-cdk-overlay",
+            "outputPath": "../dist/angular-cdk-overlay",
             "index": "projects/index.html",
             "main": "projects/main.ts",
             "tsConfig": "projects/tsconfig.app.json",
@@ -571,7 +571,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "../proxy/public/angular11/angular-cdk-layout",
+            "outputPath": "../dist/angular-cdk-layout",
             "index": "projects/index.html",
             "main": "projects/main.ts",
             "tsConfig": "projects/tsconfig.app.json",
@@ -604,7 +604,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "../proxy/public/angular11/angular-cdk-accordion",
+            "outputPath": "../dist/angular-cdk-accordion",
             "index": "projects/index.html",
             "main": "projects/main.ts",
             "tsConfig": "projects/tsconfig.app.json",
@@ -637,7 +637,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "../proxy/public/angular11/angular-cdk-drag-drop",
+            "outputPath": "../dist/angular-cdk-drag-drop",
             "index": "projects/index.html",
             "main": "projects/main.ts",
             "tsConfig": "projects/tsconfig.app.json",
@@ -670,7 +670,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "../proxy/public/angular11/angular-cdk-keycodes",
+            "outputPath": "../dist/angular-cdk-keycodes",
             "index": "projects/index.html",
             "main": "projects/main.ts",
             "tsConfig": "projects/tsconfig.app.json",
@@ -703,7 +703,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "../proxy/public/angular11/angular-cdk-portal",
+            "outputPath": "../dist/angular-cdk-portal",
             "index": "projects/index.html",
             "main": "projects/main.ts",
             "tsConfig": "projects/tsconfig.app.json",
@@ -736,7 +736,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "../proxy/public/angular11/angular-cdk-coercion",
+            "outputPath": "../dist/angular-cdk-coercion",
             "index": "projects/index.html",
             "main": "projects/main.ts",
             "tsConfig": "projects/tsconfig.app.json",
@@ -744,39 +744,6 @@
             "customWebpackConfig": {
               "path": "projects/angular-cdk-coercion/extra-webpack.config.js",
               "libraryName": "angular-cdk-coercion",
-              "libraryTarget": "system"
-            }
-          },
-          "configurations": {
-            "production": {
-              "index": "",
-              "optimization": true,
-              "outputHashing": "none",
-              "sourceMap": false,
-              "namedChunks": false,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true
-            }
-          }
-        }
-      }
-    },
-    "single-spa-angular": {
-      "projectType": "application",
-      "root": "projects/single-spa-angular",
-      "architect": {
-        "build": {
-          "builder": "@angular-builders/custom-webpack:browser",
-          "options": {
-            "outputPath": "../proxy/public/angular11/single-spa-angular",
-            "index": "projects/index.html",
-            "main": "projects/main.ts",
-            "tsConfig": "projects/tsconfig.app.json",
-            "aot": true,
-            "customWebpackConfig": {
-              "path": "projects/single-spa-angular/extra-webpack.config.js",
-              "libraryName": "single-spa-angular",
               "libraryTarget": "system"
             }
           },

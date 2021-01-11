@@ -1,0 +1,19 @@
+{
+  "name": "npm-dependencies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@esm-bundle/rxjs": "^6.6.3-fix.0",
+    "import-map-overrides": "^1.16.0",
+    "single-spa": "^5.5.5",
+    "systemjs": "^6.4.0",
+    "tslib": "^2.0.3",
+    "zone.js": "^0.10.3"
+  }
+}
